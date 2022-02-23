@@ -28,7 +28,7 @@ class PrettyPrint:
       open_braces.append(open_curle_brace_i)
     open_brace_index = min(open_braces)
     print(self.tabs * self.tabs_amount + string[:open_brace_index+1])
-    brace_open_count = string.count('[') + string.count('{')
+    brace_open_count = string.count('[') + string.count("{")
     for i in range(brace_open_count - 1):
       self.tabs_amount += 1
       print(self.tabs * self.tabs_amount + string[open_brace_index+1 + i]) 
