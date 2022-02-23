@@ -75,6 +75,6 @@ class PrettyPrint:
 
 
 
-pukpold = '{"two": "3", "b": 123, "third": "3", "ce_kurwa": [123, {"asa": 1, "kek": [2]}, [1, 2, 3, 4, [[[9, 8]], -8]]], "ha": "haha"}'
+pukpold = '{"two": "3", "b": 123, "third": "3", "ce_kurwa": [123, {"asa": 1, "kek": [2, b]}, [1, 2, 3, 4, [[[9, 8]], -8]]], "ha": "haha"}'
 new_pukpold = PrettyPrint(pukpold)
 new_pukpold.parse()
